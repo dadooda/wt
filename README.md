@@ -22,7 +22,7 @@ Many of us developers writing Unix shell scripts have faced the problem of quick
 * **Bash scripts are hard to share between people.**<br />
   _"A fellow of mine shared a big script with me, saying it works for him. I ran it on my machine, it just failed shortly with a dumb error message. Trying to fix it I looked at the code and got scared to death: it appears that things can go wrong a thousand ways. Now I'm stuck: I need the job done, but my fellow's script is a nightmare. I also don't want to develop it from scratch."_
 * **Ruby CLI scripting isn't widely promoted.**<br />
-  _"I know that complex Bash script are trouble makers. I'd love to script in Ruby, but I lack proper guidance. Everything I've done in Ruby so far was Rails-specific. I just don't know where to start if I need to write a CLI program in Ruby."_"
+  _"I know that complex Bash script are trouble makers. I'd love to script in Ruby, but I lack proper guidance. Everything I've done in Ruby so far was Rails-specific. I just don't know where to start if I need to write a CLI program in Ruby."_
 
 If any of these sound familiar to you, please read on.
 
@@ -91,6 +91,6 @@ Download the demo and use it as a starting point for your project.
 Copyright
 ---------
 
-The WT paradigm was developed in 2014-2017 by Alex Fortuna and is free to use by everyone without restrictions.
+The WT paradigm was developed in 2014-2017 by Alex Fortuna and is free to use by anyone without restrictions.
 
 Feedback of any kind is greatly appreciated.
