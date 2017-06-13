@@ -1,0 +1,7 @@
+#!/bin/bash
+
+exec ruby -e '
+  require File.expand_path("../../boot/app", "'"$0"'")
+  require "script/cpuinfo"
+  exit Script::Cpuinfo.new.main
+' -- "$@"

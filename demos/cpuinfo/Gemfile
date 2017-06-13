@@ -1,0 +1,15 @@
+
+source "https://rubygems.org"
+
+# Your production gems here.
+
+# Console color support.
+gem "pastel"
+
+group :development do
+  gem "yard"
+end
+
+group :test do
+  gem "rspec"
+end

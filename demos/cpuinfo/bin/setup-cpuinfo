@@ -1,0 +1,5 @@
+#!/bin/bash
+
+set -x
+cd "${0%/*}/.."
+bundle install --path vendor/bundle

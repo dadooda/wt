@@ -1,0 +1,13 @@
+
+# General Ruby.
+/.bundle/
+/doc/*
+/tmp/*
+/vendor/bundle/
+/.yardoc/
+
+# Bak/old/orig etc.
+*.old*
+*.orig
+/*.patch
+*.ref*
