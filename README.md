@@ -33,10 +33,64 @@ The solution
 Develop CLI scripts under WT paradigm in Ruby or other high-level languages.
 
 
-(more to come when I've got time...)
+Demo
+----
+
+<a href="demos/cpuinfo">Proceed to the demo right now</a> for some live code.
+
+
+The paradigm
+------------
+
+Complete description deserves several pages of text and a step-by-step tutorial, which (I hope) are yet to be written. Please ping me by e-mail or post issues with topics you miss the most.
+
+### Overall ###
+
+1. Each executable script **is an instantiatable Ruby class** (_script class_).
+2. The script class **controls its data** through _data attributes_ and **makes decisions** through _mode attributes_.
+3. All (most) data/mode attributes **obtain their values on-the-fly** upon first invocation. This allows to keep action-taking code (_action code_) simple and free from complicated logic.
+4. Tests primarily deal with data/mode attributes. Action code is tested when it's worth the effort.
+
+
+### Implementation guidelines ###
+
+Here I assume that you've had a quick look at <a href="demos/cpuinfo">the demo</a>.
+
+1. Dealing with data attributes:
+    1. Devote each data attribute to **a single** specific piece of information or manageable object.
+    2. Per each readable data attribute **always** provide a writable counterpart (`attr_writable` or `def attr=`).
+      You'll need it for tests.
+2. Dealing with mode attributes:
+    1. Create a mode attribute **per each decision** made by the script, even if such decision is made once per run.
+    2. Provide a way to force-set any mode attribute to a specific value.
+      You'll need it for tests.
+      In the demo I do it with `mode`, `mode=` and `mode_attr()`.
+3. Dealing with `bin/` scripts and environment boot:
+    1. `bin/` scripts contain OS commands to instantiate the script class and call `#main` properly.
+      Better not over-optimize them.
+    2. The same applies to `boot/`.
+      Don't touch it often unless required.
+4. Projecting future functionality:
+    1. **Just don't.**
+      Implement **what you currently need**, back it with tests and use it.
+      Treat the script as a continuous work-in-progress **template** which you can extend whenever convenient.
+      Hence the name "working template" -- mystery unwinded!
+    2. Continuously refactor the script class **to reflect its current end-user functionality** and be nothing else.
+      Remove stuff with zero usage count.
+5. Enjoying it all:
+    1. **Use all of Ruby power:** create class hierarchies, include modules, use 3rd party gems.
+      It's not Bash anymore, we can **program** the script now.
+
+
+### I want to write a WT script, where do I start? ###
+
+At the moment all you have is this README and <a href="demos/cpuinfo">the demo</a>.
+Download the demo and use it as a starting point for your project.
 
 
 Copyright
 ---------
 
-The WT paradigm as described above was first used in 2014 by Alex Fortuna and is free to use by everyone without restrictions.
+The WT paradigm was developed in 2014-2017 by Alex Fortuna and is free to use by everyone without restrictions.
+
+Feedback of any kind is greatly appreciated.

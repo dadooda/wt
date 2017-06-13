@@ -7,6 +7,8 @@ Overview
 
 A simple <a href="https://github.com/dadooda/wt">WT</a> script to print CPU name.
 
+Jump to code: <a href="lib/script/cpuinfo.rb">cpuinfo.rb</a>, <a href="spec/lib/script/cpuinfo_spec.rb">cpuinfo_spec.rb</a>.
+
 
 Specification
 -------------
