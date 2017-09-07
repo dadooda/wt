@@ -2,16 +2,14 @@
 The Working Template paradigm
 =============================
 
-Introduction
-------------
+## Overview
 
 Working Template ("WT" for short) is a paradigm which helps to **create, maintain, customize and share complex CLI scripts** with ease.
 
 WT is documented and demoed in Ruby, but can be implemented in any high-level scripting language suitable for CLI program development.
 
 
-The problem
------------
+## The problem
 
 Many of us developers writing Unix shell scripts have faced the problem of quickly losing control as the script is growing in size and becoming more complex. I'll summarize it in a few cases.
 
@@ -27,24 +25,21 @@ Many of us developers writing Unix shell scripts have faced the problem of quick
 If any of these sound familiar to you, please read on.
 
 
-The solution
-------------
+## The solution
 
 Develop CLI scripts under WT paradigm in Ruby or other high-level languages.
 
 
-Demo
-----
+## Demo
 
 <a href="demos/cpuinfo">Proceed to the demo right now</a> for some live code.
 
 
-The paradigm
-------------
+## The paradigm
 
 Complete description deserves several pages of text and a step-by-step tutorial, which (I hope) are yet to be written. Please ping me by e-mail or post issues with topics you miss the most.
 
-### Overall ###
+### Overall
 
 1. Each executable script **is an instantiatable Ruby class** (_script class_).
 2. The script class **controls its data** through _data attributes_ and **makes decisions** through _mode attributes_.
@@ -52,7 +47,7 @@ Complete description deserves several pages of text and a step-by-step tutorial,
 4. Tests primarily deal with data/mode attributes. Action code is tested when it's worth the effort.
 
 
-### Implementation guidelines ###
+### Implementation guidelines
 
 Here I assume that you've had a quick look at <a href="demos/cpuinfo">the demo</a>.
 
@@ -82,14 +77,13 @@ Here I assume that you've had a quick look at <a href="demos/cpuinfo">the demo</
       It's not Bash anymore, we can **program** the script now.
 
 
-### I want to write a WT script, where do I start? ###
+### I want to write a WT script, where do I start?
 
 At the moment all you have is this README and <a href="demos/cpuinfo">the demo</a>.
 Download the demo and use it as a starting point for your project.
 
 
-Copyright
----------
+## Copyright
 
 The WT paradigm was developed in 2014-2017 by Alex Fortuna and is free to use by anyone without restrictions.
 
