@@ -69,8 +69,8 @@ Here I assume that you've had a quick look at <a href="demos/cpuinfo">the demo</
     1. **Just don't.**
       Implement **what you currently need**, back it with tests and use it.
       Treat the script as a continuous work-in-progress **template** which you can extend whenever convenient.
-      Hence the name "working template" -- mystery unwinded!
-    2. Continuously refactor the script class **to reflect its current end-user functionality** and be nothing else.
+      Hence the name "working template" &mdash; mystery unwinded!
+    2. Continuously refactor the script class **so it reflects its current end-user functionality** and is nothing else.
       Remove stuff with zero usage count.
 5. Enjoying it all:
     1. **Use all of Ruby power:** create class hierarchies, include modules, use 3rd party gems.
