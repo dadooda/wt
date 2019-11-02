@@ -20,7 +20,7 @@ GEM
       rspec-support (~> 3.6.0)
     rspec-support (3.6.0)
     tty-color (0.4.2)
-    yard (0.9.9)
+    yard (0.9.20)
 
 PLATFORMS
   ruby
